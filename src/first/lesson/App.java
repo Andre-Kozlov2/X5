@@ -1,4 +1,4 @@
-package com.x5.firsthm;
+package first.lesson;
 
 public class App {
 	public static void main(String[] args) {
