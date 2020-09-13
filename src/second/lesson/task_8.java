@@ -9,20 +9,20 @@ public class task_8 {
     int summa3=0;                                    //  сумма отрицательных элементов
     int quantity=0;                                  // кол-во положительных элементов
     int quantity2=0;                                  //кол-во отр. элементов
-    float srednee;                                  // средне арифмитическое отр. элементов
-    for (int i=0; i<array.length; i++){
-        if (maximum<array[i]) maximum=array[i];
-        if (array[i]>0){
-            summa=summa+array[i];
-            quantity++;
+        for (int j : array) {
+            if (maximum < j) maximum = j;
+            if (j > 0) {
+                summa = summa + j;
+                quantity++;
+            }
+            if (j < 0 && j % 2 == 0) summa2 = summa2 + j;
+            if (j < 0) {
+                summa3 = summa3 + j;
+                quantity2++;
+            }
         }
-        if (array[i]<0 && array[i]%2==0) summa2=summa2+array[i];
-        if (array[i]<0) {
-            summa3=summa3+array[i];
-            quantity2++;
-        }
-    }
-    srednee=summa3/quantity2;
+        // средне арифмитическое отр. элементов
+        double srednee = summa3 / quantity2;
     System.out.println("максимальное значение: "+ maximum);
     System.out.println("сумма положительных элементов: "+ summa);
     System.out.println("сумма четных отрицательных элементов: "+ summa2);

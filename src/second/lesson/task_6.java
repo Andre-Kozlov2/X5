@@ -18,24 +18,13 @@ public class task_6 {
         }else {
             input = 2;
         }
-        switch (input){
-            case 0:
-                System.out.println("Отрицательное четное число");
-                break;
-            case 1:
-                System.out.println("Отрицательное нечетное число");
-                break;
-            case 2:
-                System.out.println("нулевое число");
-                break;
-            case 3:
-                System.out.println("Положительное четное число");
-                break;
-            case 4:
-                System.out.println("Положительное нечетное число");
-                break;
-            default:
-                System.out.println("Число не определено по типу");
+        switch (input) {
+            case 0 -> System.out.println("Отрицательное четное число");
+            case 1 -> System.out.println("Отрицательное нечетное число");
+            case 2 -> System.out.println("нулевое число");
+            case 3 -> System.out.println("Положительное четное число");
+            case 4 -> System.out.println("Положительное нечетное число");
+            default -> System.out.println("Число не определено по типу");
         }
     }
 }
