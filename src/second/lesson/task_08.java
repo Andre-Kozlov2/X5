@@ -1,6 +1,6 @@
 package second.lesson;
 
-public class task_8 {
+public class task_08 {
     public static void main(String[] args) {
         int[] array={1,-10,5,6,45,23,-45,-34,0,32,56,-1,2,-2};
 

@@ -1,7 +1,7 @@
 package second.lesson;
 import java.util.Scanner;
 
-public class task_6 {
+public class task_06 {
     public static void main(String[] args) {
         System.out.println("Введите целое число: ");
         Scanner scanner = new Scanner(System.in);
